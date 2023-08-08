@@ -1,11 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500&display=swap');
+
+:root {
+    --primary-clr: #FFF;
+    --accent-clr: #1992D4;
+    --secondary-clr: #E2E8F0;
+}
+
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 4fr;
+
+    min-height: 100vh;
 }
 
 .sidebar {
     grid-area: 1 / 1 / -1 / 2;
+    background-color: var(--accent-clr);
+    color: var(--primary-clr);
 }
 
 .header {
