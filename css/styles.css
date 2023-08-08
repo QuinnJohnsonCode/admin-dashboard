@@ -6,6 +6,10 @@
     --secondary-clr: #E2E8F0;
 }
 
+body {
+    font-family: "Inter", sans-serif;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -14,12 +18,46 @@
     min-height: 100vh;
 }
 
+.header {
+    grid-area: 1 / 2 / 2 / -1;
+}
+
+/* SIDEBAR */
+
 .sidebar {
     grid-area: 1 / 1 / -1 / 2;
     background-color: var(--accent-clr);
     color: var(--primary-clr);
 }
 
-.header {
-    grid-area: 1 / 2 / 2 / -1;
+.sidebar > * {
+    margin: 10px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.logo > .icon {
+    font-size: 2rem !important;
+}
+
+.icon {
+    display: inline-flex;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 1.1rem !important;
+}
+
+.side-section {
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.side-element {
+    padding-top: 20px;
 }
