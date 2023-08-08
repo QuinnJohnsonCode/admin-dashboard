@@ -38,6 +38,7 @@ body {
     font-size: 1.4rem;
     font-weight: bold;
     padding-bottom: 15px;
+    padding-top: 5px;
 }
 
 .logo > .icon {
@@ -60,4 +61,39 @@ body {
 
 .side-element {
     padding-top: 20px;
+}
+
+/* HEADER */
+.header {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    align-items: center;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: auto minmax(100px, 1fr);
+}
+
+input[type="search"] {
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 0px;
+
+    height: 24px;
+
+    font-size: 1.1rem;
+    background-color: var(--secondary-clr);
+}
+
+input[type="search"]:focus {
+    outline: none;
+}
+
+/* CONTENT */
+.content {
+    background-color: var(--secondary-clr);
 }
