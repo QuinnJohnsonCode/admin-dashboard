@@ -4,6 +4,8 @@
     --primary-clr: #FFF;
     --accent-clr: #1992D4;
     --secondary-clr: #E2E8F0;
+    --card-accent-clr: #F0B429;
+    --subtext-clr: #BBB;
 }
 
 body {
@@ -144,7 +146,59 @@ button {
     padding: 10px 30px;
     border-radius: 20px;
 }
+
 /* CONTENT */
 .content {
     background-color: var(--secondary-clr);
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    grid-area: 1 / 1 / -1 / 2;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    display: grid;
+
+    background-color: var(--primary-clr);
+    color: black;
+    height: 175px;
+    padding: 30px 20px;
+
+    border-radius: 10px;
+    border: 8px solid var(--primary-clr);
+    border-left-color: var(--card-accent-clr);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.card-icons {
+    align-self: last baseline;
+    justify-self: end;
+}
+
+.card-icons > * {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card h3 {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.card p {
+    color: var(--subtext-clr);
+    font-size: 0.9rem;
 }
