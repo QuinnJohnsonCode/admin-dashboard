@@ -69,6 +69,8 @@ body {
 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-left: 30px;
+    margin-right: 30px;
 
     align-items: center;
 }
@@ -76,14 +78,19 @@ body {
 .search {
     display: grid;
     grid-template-columns: auto minmax(100px, 1fr);
+    gap: 15px;
+}
+
+.search > span {
+    font-weight: bold !important;
 }
 
 input[type="search"] {
     padding-left: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 0px;
 
-    height: 24px;
+    height: 28px;
 
     font-size: 1.1rem;
     background-color: var(--secondary-clr);
